@@ -32,3 +32,9 @@ namespace ClearConsole
 
             else
                 gradeLetter = "Please enter a valid Number";
+            Console.WriteLine("Grade:" + gradeLetter);
+            Console.WriteLine("Press Enter; to Exit...");
+            Console.Read();
+        }
+    }
+}
