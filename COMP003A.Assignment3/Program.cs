@@ -27,12 +27,12 @@ namespace ClearConsole
                 else if (numericGrade >= 60)
                     gradeLetter = "D";
                 else if (numericGrade < 60)
-                    gradeLetter = "F";
+                    gradeLetter= "F";
             }
 
             else
                 gradeLetter = "Please enter a valid Number";
-            Console.WriteLine("Grade:" + gradeLetter);
+            Console.WriteLine("Grade:"+ gradeLetter);
             Console.WriteLine("Press Enter; to Exit...");
             Console.Read();
         }
@@ -64,3 +64,18 @@ namespace ClearConsole
                 case 4:
                     Console.WriteLine("It's THURSDAY");
                     break;
+                case 5:
+                    Console.WriteLine("It's FRIDAY");
+                    break;
+                case 6:
+                    Console.WriteLine("It's SATURDAY");
+                    break;
+               
+
+                default:
+                    Console.WriteLine("It's wrong input...");
+                    break;
+            }
+        }
+    }
+}
