@@ -38,3 +38,29 @@ namespace ClearConsole
         }
     }
 }
+
+
+namespace ClearConsole
+{
+    class program
+    {
+        public static void Main(string[] args)
+        {
+            var numericDay = Convert.ToInt32(Console.ReadLine());
+            switch (numericDay)
+            {
+                case 0:
+                    Console.WriteLine("It's SUNDAY");
+                    break;
+                case 1:
+                    Console.WriteLine("It's MONDAY");
+                    break;
+                case 2:
+                    Console.WriteLine("It's TUESDAY");
+                    break;
+                case 3:
+                    Console.WriteLine("It's WEDNESDAY");
+                    break;
+                case 4:
+                    Console.WriteLine("It's THURSDAY");
+                    break;
