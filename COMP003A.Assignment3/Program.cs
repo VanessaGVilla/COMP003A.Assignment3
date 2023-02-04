@@ -18,14 +18,17 @@ namespace ClearConsole
             numericGradeStr = Console.ReadLine();
             if (decimal.TryParse(numericGradeStr, out numericGrade))
             {
-                    if(numericGrade > 90)
+                if (numericGrade > 90)
                     gradeLetter = "A";
-                    else if (numericGrade >= 80)
+                else if (numericGrade >= 80)
                     gradeLetter = "B";
-                    else if (numericGrade >= 70)
+                else if (numericGrade >= 70)
                     gradeLetter = "C";
-                    else if (numericGrade >= 60)
+                else if (numericGrade >= 60)
                     gradeLetter = "D";
-                    else if (numericGrade<60)
-                    gradeLetter = "F"
+                else if (numericGrade < 60)
+                    gradeLetter = "F";
             }
+
+            else
+                gradeLetter = "Please enter a valid Number";
