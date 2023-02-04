@@ -18,7 +18,7 @@ namespace ClearConsole
             numericGradeStr = Console.ReadLine();
             if (decimal.TryParse(numericGradeStr, out numericGrade))
             {
-                    if (numericGrade > 90)
+                    if(numericGrade > 90)
                     gradeLetter = "A";
                     else if (numericGrade >= 80)
                     gradeLetter = "B";
@@ -26,6 +26,6 @@ namespace ClearConsole
                     gradeLetter = "C";
                     else if (numericGrade >= 60)
                     gradeLetter = "D";
-                    else if (numericGrade < 60)
+                    else if (numericGrade<60)
                     gradeLetter = "F"
             }
